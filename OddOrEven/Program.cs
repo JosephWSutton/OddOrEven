@@ -6,7 +6,22 @@ namespace OddOrEven
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IsOdd(3); 
         }
+
+        public static bool IsOdd(int number)
+        {
+            if (number % 2 == 0)
+            {
+                Console.WriteLine("The number is even");
+                return false;
+            }
+            else
+            {
+                Console.WriteLine("The number is odd");
+                return true;
+            }
+        }
+
     }
 }
